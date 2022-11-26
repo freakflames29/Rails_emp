@@ -1,0 +1,54 @@
+<div id="chage_content">
+  <div class="container mt-5 box">
+    <div class="field">
+      <label class="label">Ticket Number</label>
+      <div class="control">
+        <input
+          class="input"
+          type="text"
+          placeholder="Enter Ticket Number"
+          id="tc_tick_number"
+        />
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">User's Name</label>
+      <div class="control">
+        <input
+          class="input"
+          type="text"
+          placeholder="Enter User's Name"
+          id="tc_uname"
+        />
+      </div>
+    </div>
+    <div class="field">
+      <button class="button is-success is-light" onclick="closeFunc()">
+        Generate
+      </button>
+    </div>
+    <div class="field" id="tc_sub">
+      <label   class="label">Email Sub</label>
+      <div class="field is-grouped">
+
+        <input
+        class="input"
+        type="text"
+        placeholder="email sub"
+        id="tc_email_sub"
+        readonly="'true"
+        
+        />
+        
+        <button class="button is-success is-light ml-2" onclick="copy_ticket_closing_sub()">Copy Sub</button>
+
+      </div>
+    </div>
+    <div class="field" id="tc_msg">
+     <label class="label">Email Sub</label>
+        <textarea name="tc_msg" id="tc_msg_field" class="textarea is-large" readonly="true"></textarea>
+        <button class="button is-success is-light mt-2" onclick="copy_ticket_closing_body()">Copy Body</button>
+
+    </div>
+  </div>
+</div>

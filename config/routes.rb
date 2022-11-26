@@ -6,4 +6,11 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   root 'home#index'
+  get 'doc', to:'home#doc'
+
+  get 'call',to:'ticket#call'
+  get 'notrespond',to:'ticket#notrespond'
+  get 'close',to:'ticket#close'
+  get 'vendor',to:'ticket#vendor'
+
 end
