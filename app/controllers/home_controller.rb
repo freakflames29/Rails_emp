@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
 
-before_action :require_login,except:[:login,:appr]
+before_action :require_login,except:[:login,:appr,:destroy]
 
 
   def index
@@ -22,6 +22,13 @@ before_action :require_login,except:[:login,:appr]
       @er='red border_red'
       render :login
     end
+  end
+
+
+  def destroy
+    # render plain:'del call'
+    session[:pass]=nil
+    redirect_to login_path
   end
 
 end

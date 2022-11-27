@@ -17,4 +17,6 @@ Rails.application.routes.draw do
   get 'login',to:'home#login' 
   post 'login',to:'home#appr'
 
+  delete 'logout',to:'home#destroy'
+
 end
