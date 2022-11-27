@@ -1,1 +1,60 @@
-hi
+<div class="container mt-5 box">
+  <div class="field">
+    <label class="label">Ticket Number</label>
+    <div class="control">
+      <input
+        class="input"
+        type="text"
+        placeholder="Enter Ticket Number"
+        id="tcall_tnumber"/>
+    </div>
+  </div>
+
+  <div class="field">
+    <label class="label">User's Name</label>
+    <div class="control">
+      <input
+        class="input"
+        type="text"
+        placeholder="Enter User's Name"
+        id="tcall_uname"/>
+    </div>
+  </div>
+
+  <label class="label">Vendor</label>
+  <div class="select">
+    <select id="vendor_list">
+      <option value="HP">HP</option>
+      <option class="Acer">Acer</option>
+      <option class="Lenovo">Lenovo</option>
+      <option value="DELL">DELL</option>
+    </select>
+  </div>
+  <label class="label">Case id</label>
+  <input
+    class="input"
+    type="text"
+    placeholder="Enter case id"
+    id="tcall_caseid"/>
+
+  <div class="field mt-5">
+    <button class="button is-success" onclick="tick_call_fun()">Generate</button>
+  </div>
+
+  <div class="field" >
+    <label for="" class="label">Email Sub</label>
+    <div class="field is-grouped">
+    <input type="text" placeholder='Email Sub' readonly='true' id="tcall_sub"  class="input">
+    <button class="ml-2 button is-success is-light" onclick="copy_tick_call_close_sub()">Copy Sub</button>
+    </div>
+
+  </div>
+  <div class="field">
+    <label  class="label">Email Body</label>
+    <textarea name="tc_msg" id="tcall_msg" class="textarea is-large" readonly="true"></textarea>
+    <button class="button is-success is-light mt-2" onclick="copy_tick_call_close_body()">Copy Body</button>
+
+
+
+  </div>
+</div>

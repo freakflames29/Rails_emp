@@ -14,7 +14,7 @@ Hence I am closing the ticket to avoid further aging.
 We prefer NOT TO REOPEN the ticket.
 
 If you face any challenge, please reach out to me-2297004/ Reply on this mail chain/ Call me on undersigned number or if I am not
-available you can amil my leads suvajit.bhattacharya@tcs.com and de.avishek@tcs.com for urgent help.    
+available you can email my leads suvajit.bhattacharya@tcs.com and de.avishek@tcs.com for urgent help.    
 `
    
 }
