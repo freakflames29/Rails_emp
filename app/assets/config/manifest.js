@@ -3,3 +3,4 @@
  //= link close.js
  //= link calllog.js
  //= link notrespond.js
+ //= link vendor.js

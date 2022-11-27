@@ -1,0 +1,15 @@
+<div class="login_container">
+  <div class="loginbox <%= @er %>">
+    <%= form_with url:login_path,class:'login_form' do |f| %>
+      <h1 class="fd"><i class="fa-sharp fa-solid fa-lock"></i></h1>
+      <label class="labelloin <%= @er %>" for='login'>Enter your passcode to accesss</label>
+      <% if @er %>
+        <%= f.password_field :login ,placeholder:"Enter passcode",id:'loginpass',class:'x red border_red'%>
+        <%= f.submit "For god's sake let me in",id:'loginbtn' ,class:'xbtn red border_red'%>
+      <% else %>
+        <%= f.password_field :login ,placeholder:"Enter passcode",id:'loginpass',class:'x'%>
+        <%= f.submit "For god's sake let me in",id:'loginbtn' ,class:'xbtn'%>
+      <% end -%>
+    <% end -%>
+  </div>
+</div>

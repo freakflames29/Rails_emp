@@ -21,11 +21,14 @@
   </head>
 
   <body>
+    <% if session[:pass] %>
     <%= render '/partials/nav' %> 
+    <% end -%>
     <%= yield %>
     <%= javascript_include_tag 'close.js' %>
     <%= javascript_include_tag 'calllog.js' %>
     <%= javascript_include_tag 'notrespond.js' %>
+    <%= javascript_include_tag 'vendor.js' %>
     
   </body>
 </html>

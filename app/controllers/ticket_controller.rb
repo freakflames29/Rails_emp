@@ -1,5 +1,7 @@
 class TicketController < ApplicationController
 
+    before_action :require_login
+
     def call
     end
 

@@ -1,1 +1,64 @@
-vendor
+<!-- <h1 class="title container mt-5 is-dark" align="center">Vendor Mail</h1> -->
+<div class="container mt-5 box">
+  <div class="field">
+    <label class="label">Vendor Name</label>
+    <div class="control">
+      <input
+        class="input"
+        type="text"
+        placeholder="Vendor name"
+        id="vendor_name"
+      />
+    </div>
+  </div>
+  <div class="field">
+    <label class="label">Vendor Company</label>
+     <div class="field select">
+    <select id="vechicle_comp">
+      <option value="DELL">DELL</option>
+      <option value="Lenovo">Lenovo</option>
+      <option value="Acer">Acer</option>
+      <option value="HP">HP</option>
+    </select>
+  </div>
+  <div class="field">
+    <label class="label">Vendor has vehicle?</label>
+  </div>
+
+  <div class="field select">
+    <select id="vechicle_drop">
+      <option value="N">No</option>
+      <option value="Y">Yes</option>
+    </select>
+  </div>
+
+  <label class="label">ODC</label>
+  <div class="select">
+    <select id="odc">
+      <option value="Infospace AI 7 ODC C IS Room">Infospace 7 ODC IS Room</option>
+      <option value="Oval GIII 6 ODC IS Room">Oval GIII 6 ODC IS Room</option>
+      <option value="Sabina Park BII 2 ODC IS Room">Sabina Park BII 2 ODC IS Room</option>
+    </select>
+  </div>
+
+  <div class="field mt-5">
+    <button class="button is-success" onclick="vendor_gen()">Generate</button>
+  </div>
+
+<div class="box">
+  <div class="field" id="vendor_sub">
+  	<label class="label">Email Sub</label>
+  	<div class="field is-grouped">
+  		<input type="text" id="vendor_email_sub" placeholder="Email Sub" readonly='true' class='input'/>
+  		<button class="button is-primary ml-2" onclick="vendor_sub_copy()">Copy Sub</button>
+  	</div>
+  </div>
+  <div class="field" id="vendor_body">
+  		<div class="field">
+  			<label class="label">Email Body</label>
+  			<textarea class="textarea is-large" id="vendor_email_body"  readonly='true' placeholder="Email body"></textarea>
+  		<button class="button is-primary mt-2" onclick="vendor_body_copy()">Copy Body</button>
+  		</div>
+  </div>
+  </div>
+</div>

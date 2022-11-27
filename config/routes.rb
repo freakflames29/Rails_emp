@@ -13,4 +13,8 @@ Rails.application.routes.draw do
   get 'close',to:'ticket#close'
   get 'vendor',to:'ticket#vendor'
 
+
+  get 'login',to:'home#login' 
+  post 'login',to:'home#appr'
+
 end
